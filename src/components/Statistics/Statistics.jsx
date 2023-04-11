@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
+// eslint-disable-next-line no-unused-vars
 import styles from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     return (
