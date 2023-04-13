@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './App.module.css';
+import style from './App.module.css';
 import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
@@ -13,8 +13,8 @@ class App extends Component {
   };
 
   onLeaveFeedback = state => {
-    this.setState(previousState => ({
-      [state]: previousState[state] + 1,
+    this.setState(prevState => ({
+      [state]: prevState[state] + 1,
     }));
   };
 
@@ -33,7 +33,7 @@ class App extends Component {
     const options = Object.keys(this.state);
 
     return (
-      <div className={styles.container}>
+      <div className={style.container}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
