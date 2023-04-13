@@ -4,6 +4,7 @@
     text-transform: uppercase;
     cursor: pointer;
     display: block;
+    outline: none;
     width: 140px;
     font-weight: bold;
     margin: 20px auto;
